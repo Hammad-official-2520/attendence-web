@@ -43,7 +43,7 @@ body {
     transition: 0.3s;
 }
 
-input {
+input ,.input {
     display: block;
     margin: 12px auto;
     outline: none;
@@ -374,10 +374,134 @@ input {
   }
   #manageStudent{
     display: none;
+
   }
+ 
 
+.profile-pic-div{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid grey;
+   margin: 0 auto;
+    
 
+}
 
+#photo{
+    height: 100%;
+    width: 100%;
+}
 
+#file{
+    display: none;
+}
 
+#uploadBtn{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: wheat;
+    line-height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+}
+.manahe{
+  margin-top: 10%;
+  width: 60%;
+  position: absolute;
+  padding: auto;
+  border-radius: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 60%;
+  padding-top: 50px;
 
+  
+}
+.dis{
+  display: flex;
+  margin-bottom: 50px;
+  
+}
+.input{
+  width: 400px;
+  margin-left: 20px;
+}
+.main-input{
+  width: 100%;
+ 
+}
+.addbtn{
+  margin: 0 auto;
+}
+#manageclass{
+  display: none;
+}
+#fathername, #name1, #rollno, #contact, #cnic, #select{
+  width: 80% !important;
+}
+
+  
+@media (max-width: 1000px){
+
+  .dis{
+    display: block;
+    
+    
+  }
+ 
+}
+
+.class-form{
+  align-items: center;
+  justify-content: center;
+}
+
+.class-text{
+  margin-left: 43%;
+}
+.input2{
+  margin-left: 25%;
+  width: 50%;
+}
+.btn2{
+  margin: 10px auto;
+}
+.h1{
+ font-size: 30px;
+}
+#courseclasses{
+  display: none;
+  margin-top: 10%;
+  min-width: 30%;
+  max-width: 80%;
+  
+  position: absolute;
+  padding: auto;
+  border-radius: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 25%;
+  padding-top: 50px;
+
+}
+
+#courseclasses h1 , h2{
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.doctime{
+  font-weight: 600;
+  color: rgb(63, 63, 61);
+}

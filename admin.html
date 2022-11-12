@@ -1,80 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e24fdbd7b8.js" crossorigin="anonymous"></script>
-    <title>Admin Panel</title> 
-    
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e24fdbd7b8.js" crossorigin="anonymous"></script>
+  <title>Admin Panel</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="sidebar">
-        <div class="logo-details">
-          <div class="logo_name">S M I T </div>
-          <i id="btn" class="fa-solid fa-bars"></i>
-        </div>
-        <ul class="nav-list">
-          <li>
-            <a href="#">
-                <i class="fa-solid fa-file"></i>
-              <span class="links_name">Dashboard</span>
-              <span class="tooltip">Dashboard</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-                <i class="fa-solid fa-graduation-cap"></i>
-              <span class="links_name">Students</span>
-              <span class="tooltip">Students</span>
-            </a>
-          </li>
-          <li id="addstudents">
-            <a href="#">
-                <i class="fa-solid fa-user"></i>
-              <span class="links_name">Manage Students</span>
-              <span class="tooltip">Manage Students</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-                <i class="fa-sharp fa-solid fa-book"></i>
-              <span class="links_name">Course</span>
-              <span class="tooltip">Course</span>
-            </a>
-          </li>
-        </ul>
+  <div class="sidebar">
+    <div class="logo-details">
+      <div class="logo_name">S M I T </div>
+      <i id="btn" class="fa-solid fa-bars"></i>
+    </div>
+    <ul class="nav-list">
+      <li id="allclass">
+        <a href="#">
+          <i class="fa-solid fa-file"></i>
+          <span class="links_name">All Class</span>
+          <span class="tooltip">All Class</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <span class="links_name">Students</span>
+          <span class="tooltip">Students</span>
+        </a>
+      </li>
+      <li id="addstudents">
+        <a href="#">
+          <i class="fa-solid fa-user"></i>
+          <span class="links_name">Manage Students</span>
+          <span class="tooltip">Manage Students</span>
+        </a>
+      </li>
+      <li id="createclass" >
+        <a href="#">
+          <i class="fa-sharp fa-solid fa-book"></i>
+          <span class="links_name">Create Class</span>
+          <span class="tooltip">Create Class</span>
+        </a>
+      </li>
+    </ul>
+
+
+  </div>
+
+  <section class="home-section">
+    <div class="header"></div>
+    <div id="manageStudent">
+
+<div id="manahe" class="manahe">
+  <div class="profile-pic-div">
+    <img src="./image/profile.png" id="photo">
+    <input type="file" id="file">
+    <label for="file" id="uploadBtn">Choose Photo</label>
+  </div>
+ <div>
+  <div  class="dis" > <input id="name1" class="input" placeholder="Name" type="text">
+    <input id="fathername" class="input" placeholder="Fathername" type="text">
+  </div>
+  <div class="dis">
     
-    
-      </div>
-    
-      <section class="home-section">
-        <div class="header"></div>
-        <div id="manageStudent"> 
-            
-            <div id="container" class="container2">
-                <i class="fa fa-times fa-2x close-btn" onclick="close()" aria-hidden="true"></i>
-                <h1 class="h1">Create Profile</h1>
-                <div id="display-image">
-                    <img  src="./128-1280406_view-user-icon-png-user-circle-icon-png.png" id="img-box" width="100"
-                        height="100">
-                    <label  class="image-span">Upload Photo<input type="file" id="image-input"
-                            accept="image/jpeg, image/png, image/jpg">
-                    </label>
+      <select id="select" class="input" name="" >
+        <option value="">Web and app</option>
+        <option value="">Artificial Intelligence</option>
+        <option value="">Graphic Design</option>
+      </select>
+   
+     <input id="rollno" class="input" placeholder="Rollno" type="number">
+  </div>
+  <div class="dis">
+    <input id="contact" class="input" placeholder="Email" type="email">
+    <input id="cnic" class="input" placeholder="CNIC" type="number">
+ </div>
+ 
+
+ </div>
+    <button id="submitBtn" class="btn addbtn">Submit</button>
+</div>
+
+    </div>
+    <div id="manageclass" >
+
+ <div  class="class-form manahe">
+                <div class="class-text">
+                    <h1 class="h1">
+                        Create Class
+                    </h1>
                 </div>
-                <input type="text" id="name" placeholder="Name">
-                <input type="email" name="" id="email" placeholder="Email">
-                <input type="password" id="password" placeholder="Password">
-                <button id="register-btn" class="register_btn btn">Create Profile</button>
-                <span id="alredy-account" class="spn">I've an account</span>
+
+                <div>
+                    <input id="coursename" class="input input2" type="text" placeholder="Course name">
+                    <input id="batchnumber" class="input input2" type="text" placeholder="Batch number">
+
+                </div>
+                <div>
+                    <input id="teacher" class="input input2" type="text" placeholder="Teacher name">
+                    <input id="section" class="input input2" type="text" placeholder="Section">
+
+                </div>
+                <div>
+                    <input id="classtime" class="input input2" type="text" placeholder=" Class timing">
+                    <input id="classschedule" class="input input2" type="text" placeholder="Class schedule">
+
+                </div>
+                <div >
+                    <button id="createclassess" class="btn btn2" type="button"> Create </button>
+                </div>
             </div>
+    </div>
+   
+                
+      <div id="courseclasses" >
         
         </div>
-      </section>
 
-    
-    <script type="module" src="firebase.js"></script>
-    <script src="admin.js"></script>
+   
+
+
+
+
+
+
+
+
+  </section>
+
+
+  <script type="module" src="firebase.js"></script>
+  <script src="admin.js"></script>
 </body>
+
 </html>
