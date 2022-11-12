@@ -12,15 +12,20 @@
    appId: "1:288768015543:web:a360e1eb0d29a023372132",
    measurementId: "G-8SSZ1EN4GE"
  };
- const app = initializeApp(firebaseConfig);
- const analytics = getAnalytics(app);
- const db = getFirestore(app);
- const auth = getAuth();
+ 
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getFirestore(app);
+    const auth = getAuth();
+
+
 
 
    ////////////////////////////login//////////////////////////////////
-{
 
+
+try{
     const loginBtn = document.getElementById("login-btn");
     loginBtn.addEventListener("click", () => {
        let name = document.getElementById("email").value;
@@ -38,6 +43,19 @@
        console.log(errorMessage)
      });
     })
-
+}catch{
+    console.log("error")
 }
+
 ////////////////////////////login end//////////////////////////////////
+
+
+try{
+    let addstudents = document.getElementById("addstudents");
+addstudents.addEventListener("click", ()=>{
+ let manageStudent = document.getElementById("manageStudent");
+ manageStudent.style.display = "flex"
+})
+}catch{
+    console.log("error")
+}
